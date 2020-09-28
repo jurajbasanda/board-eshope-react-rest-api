@@ -1,0 +1,120 @@
+$backgroundColor: #eeeeee;
+.boards{  
+    width:100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+     a{text-decoration: none;
+        font-style: italic;
+        color: black;
+        font-size: 1.2rem;}
+    .backLink{
+            padding-left: 20vh;
+                padding-right: 20vh;
+            justify-self: flex-start;
+            align-self: flex-start;
+            margin-bottom: 5vh;
+    }
+        
+    }
+    .head-background{  
+         width: 100%;
+        height: 25vh;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       display: flex;
+       padding-left: 20vh;
+       padding-right: 20vh;
+       justify-content: flex-start;
+       align-items: center;
+            h2{
+            font-size: 3rem;
+            color: white;
+            font-style: italic;
+            cursor: default;
+            }
+}   
+
+.title{
+    margin-bottom: 5vh;
+}
+    .boards-group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+       
+    }
+    .board-item{
+        margin:2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+              
+    img{width:18rem;
+        justify-self: center;
+        align-self: center;
+    }
+}
+.price{
+    color: rgb(190, 7, 7);
+    font-size: 1.5rem;
+}
+//-----------------------------Loader---------------------
+.loader {
+    border: 13px solid #f3f3f3;
+    border-top: 13px solid rgb(68, 59, 59);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  //----------------------------Loader-END----------------
+//------------------------------------max-width---1030px----------ipad--------------------------
+@media screen and (max-width:1030px){
+    .boards{  
+        .backLink{
+                padding-left: 5vh;
+                padding-right: 5vh;
+                
+        } 
+        .head-background{   
+            padding-left: 5vh;
+            padding-right: 0vh;
+            justify-content: flex-start;
+            align-items: center;
+                    h2{
+                    font-size: 3rem;
+                    }
+                }}
+}
+//---------------------------------------max-width--700px-----mobile-----------------------
+@media screen and (max-width:700px){
+    .boards{  
+        .backLink{
+                padding-left: 5vh;
+                    padding-right: 5vh;
+                
+        }  
+            .head-background{   
+            padding-left: 5vh;
+            padding-right: 0vh;
+            justify-content: flex-start;
+            align-items: center;
+                    h2{
+                    font-size: 3rem;
+                    }
+                }
+    } 
+}

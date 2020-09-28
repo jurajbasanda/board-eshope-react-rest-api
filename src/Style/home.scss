@@ -1,0 +1,236 @@
+.home{
+    background-image: url(../images/bg-man-performing-on-skate-park.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
+
+    h1{
+        font-style: italic;
+        font-size: 4rem;
+        color: white;
+        margin-top: 10vh;
+        margin-left: 10vh;
+}
+}
+//----------------------------In the midle bar ----SHOP NOW--------------
+.shopNow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 5vh;
+    background-color: white;
+    button{
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        margin: 1rem;
+        border: none;
+        width: 14rem;;
+        a{color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    }
+}
+//--------------------------Category------------------------------
+.options{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 5vh;
+h2{color: white;
+    justify-self: flex-start;
+    align-self: flex-start;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+}
+.options-group{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+   
+    a{  text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        letter-spacing: 10px;
+        font-size: 2rem;
+    }
+    .options-item{ z-index: 1;
+       height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        opacity: 1;
+        margin:2vh
+    }:hover{opacity: 1;}
+    .transp{margin: 30px;
+        background-color: #000000;
+        border: 1px solid black;
+        opacity: 0.6;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .skate{background-image: url(../images/skateboard.jpg); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    .snow{background-image: url(../images/snowboard.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .surf{background-image: url(../images/surf.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+//----------------------------------Video Section-------------------------------
+.videoSection{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{color: white;
+        justify-self: flex-start;
+        align-self: flex-start;
+        font-weight: lighter;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 3vh;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:700px){//-------------------------------------------------700px-------------------------------
+.home{
+    background-attachment: fixed;
+    justify-content: flex-start;
+    align-items: center;
+    h1{
+        font-size: 4.5rem;
+        color: white;
+        margin-top: 0vh;
+        margin-left: 20vh;
+}
+}
+//----------------------------In the midle bar ----SHOP NOW--------------
+.shopNow{
+    height: 100%;
+    padding: 8vh;
+    p{max-width: 800px;}
+}
+//--------------------------Category------------------------------
+.options{  
+      padding: 20vh 20vh 20vh 20vh;
+}
+.options-group{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    a{  text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        letter-spacing: 10px;
+        font-size: 2rem;
+    } 
+    .options-item{ z-index: 1;
+       height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        opacity: 0.6;
+        margin:1vh
+    }:hover{opacity: 1;}
+    .transp{margin: 30px;
+        background-color: #000000;
+        border: 1px solid black;
+        opacity: 0.6;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .skate{background-image: url(../images/skateboard.jpg); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    .snow{background-image: url(../images/snowboard.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .surf{background-image: url(../images/surf.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+}
+//----------------------------------Video Section-------------------------------
+.videoSection{
+    padding-left: 20vh;
+    padding-right: 20vh;
+    iframe{
+        width: 100%;
+        height: 60vh;
+
+    }
+}
+
+}

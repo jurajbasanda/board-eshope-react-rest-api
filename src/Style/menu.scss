@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Special Elite';
+    src: url("../fonts/Special_Elite/SpecialElite-Regular.ttf");
+  }
+//-------------------Logo font--------
+nav{z-index: 9;
+    width: 100%;
+    height: 8vh;
+    padding-left: 5vh;
+    padding-right: 0vh;
+    display: flex;
+    background-color:#FAF8F8 ;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 3px;
+    transition: all 1s;
+
+    a{text-decoration: none;
+      color: black;}
+    .burger{z-index: 9;
+        font-size: 1.7rem;}
+    h1{
+        font-size: 2.5rem;
+        font-family: 'Special Elite';
+        }
+        .logo{z-index: 9;}
+    .desktop{  z-index: 9; 
+            display: none;}
+    .basket-button{display: block;}
+    .basket{font-size: 1.5rem;}
+    .basket-length{background-color:#b82424;
+                    margin-right: -9px;
+                    color: white;
+                    padding: 5px;
+                    text-align: center;
+                    border-radius: 50%;}
+}
+.mobil{z-index: 0;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    background-color:rgba(250, 248, 248, 0.836) ;
+    width: 100%;
+    left: -100vh;
+    top: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    transition: all ease 1s;
+    li{
+        padding: 10px;
+        margin: 5px;
+        width: 100%;
+       }
+       a{text-decoration: none;
+        color: black;
+        font-size: 1.3rem;}
+    }
+.open{
+    z-index: 0;
+    opacity: 1;
+    top: 15vh;
+    left: 0;
+    transition: all ease 1s;
+    ul{z-index: 0;}
+
+    
+    }
+   
+    
+
+@media screen and (min-width:700px){
+    nav{
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:#FAF8F8 ;
+        .burger{display: none;}
+        .mobil{display: none;}
+        .basket-button{display: none;
+            }
+        .desktop{  
+                    width: 800px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    list-style: none;
+                    height: 8vh;
+                    letter-spacing: 3px;
+                    
+                        li{a{color: black;
+                        text-decoration: none;
+                        font-size: 1rem;}
+                        :hover{text-decoration: overline;}
+                    }
+                        
+                }
+        }
+    
+}
