@@ -1,4 +1,4 @@
-import React,{useEffect,useState,} from 'react';
+import React,{useEffect} from 'react';
 import { useDispatch,useSelector } from 'react-redux';
 import {useLocation,useParams} from 'react-router-dom'
 import { addToCart,removeFromCart } from '../actions/cardActions'
@@ -31,7 +31,7 @@ const Cart =()=> {
     left: 0,
     behavior: 'smooth'
   });
-    }, []);
+    }, [dispatch,id,qty]);
     
     if(cartItems.length !== 0){
   return (

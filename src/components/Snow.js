@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from 'react'
+import React, {useEffect} from 'react'
 import {useSelector,useDispatch} from 'react-redux'
 import { Link } from 'react-router-dom'
 import {listProducts} from '../actions/productActions'
@@ -11,7 +11,7 @@ import background from '../img/snowboarding01.jpg'
 const Snow = () => {
   //States
   const productList = useSelector(state => state.productList)
-  const {snow,products,loading,error} = productList;
+  const {snow,loading,error} = productList;
   const dispatch =  useDispatch()
   
   useEffect(() => {
@@ -23,7 +23,7 @@ const Snow = () => {
       behavior: 'smooth',
     })
     
-  }, [])
+  }, [dispatch])
   
     return( loading ? 
       <main>

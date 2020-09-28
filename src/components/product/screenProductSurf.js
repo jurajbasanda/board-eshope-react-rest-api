@@ -25,7 +25,7 @@ const ProductSurf = props => {
       left: 0,
       behavior: 'smooth',
     });    
-  }, []);
+  }, [dispatch,id]);
   //Add To Cart
   const handleAddToCart = () => { push('/cart/' + id + '?qty=' + qty) }
   if (loading) {

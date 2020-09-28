@@ -11,7 +11,7 @@ import background from '../img/skateboard01.jpg'
 const Skate = () => {
   //States
   const productList = useSelector(state => state.productList)
-  const {skate,products,loading,error} = productList
+  const {skate,loading,error} = productList
   const dispatch =  useDispatch()
 
 
@@ -24,7 +24,7 @@ const Skate = () => {
       behavior: 'smooth',
     })
     
-  }, [])
+  }, [dispatch])
   
     return( loading ? 
       <main>
